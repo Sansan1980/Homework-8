@@ -21,6 +21,47 @@ new
         morcovka[1] = 8;
         morcovka[2] = 9;
 
+        /*
+
+Задача 2
+Распечатайте на отдельной строчке элементы каждого массива по порядку через запятую. В конце строки запятую ставить не надо.
+         */
+        System.out.println("задача №2");
+        //№1
+        System.out.println();
+        System.out.println("№1");
+        int a = massiv[0];
+        int b = massiv[1];
+        int c = massiv[2];
+        System.out.print(a + ", ");
+        System.out.print(b + ", ");
+        System.out.println(c);
+        //System.out.print(massiv[a-1]+", "); //[a-1]непонятная запись для меня, но работает
+        //System.out.print(massiv[b-1]+", "); //непонятная запись для меня
+        //System.out.println(massiv[c-1]);   //непонятная запись для меня
+        System.out.print(massiv[0]);
+        System.out.print(massiv[1]);
+        System.out.println(massiv[2]);
+        for (int i = 0; i < massiv.length; i++) {
+            System.out.print(massiv[i]+", ");
+
+        }
+        System.out.println();
+
+
+        //№2
+        System.out.println();
+        System.out.println("№2");
+        for (int n = 0; n < drob.length; n++) {
+            System.out.print(drob[n]+", " );
+        }
+        System.out.println();
+        System.out.println("№3");
+        for (int i =0; i < morcovka.length; i++) {
+            System.out.print(morcovka[i] + ", ");
+        }
+        System.out.println();
+        System.out.println("Задача № 3");
 
     }
     }
