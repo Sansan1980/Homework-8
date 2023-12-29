@@ -62,6 +62,30 @@ new
         }
         System.out.println();
         System.out.println("Задача № 3");
+ /*
+            Задача 3
+Распечатайте на отдельной строчке элементы каждого массива в обратном порядке через запятую.
+В конце строки запятую ставить не надо.
+Если в задаче 2 в консоль у вас вывелся результат:
+             */
+        // №1
+        for (int i  = massiv.length-1; i >= 0; i--) {
+            System.out.print(massiv[i] + ", ");
+        }
+        System.out.println();
+        //№2
+        for (int i = drob.length-1; i >= 0; i--) {
+            System.out.print(drob[i] + ", ");
+        }
+        System.out.println();
+        //3
+        for (int i = morcovka.length-1; i >= 0; i--) {
+            System.out.print(morcovka[i]+", ");
+
+        }
+
+
+
 
     }
     }
