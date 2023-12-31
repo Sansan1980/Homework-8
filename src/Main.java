@@ -1,3 +1,8 @@
+
+import java.util.Arrays;
+
+
+
 public class Main {
     public static void main(String[] args) {
 
@@ -43,8 +48,11 @@ new
         System.out.print(massiv[1]);
         System.out.println(massiv[2]);
         for (int i = 0; i < massiv.length; i++) {
-            System.out.print(massiv[i]+", ");
-
+            if (i == massiv.length - 1) {
+                System.out.print(massiv[i]);
+            } else {
+                System.out.print(massiv[i] + ", ");
+            }
         }
         System.out.println();
 
@@ -53,14 +61,22 @@ new
         System.out.println();
         System.out.println("№2");
         for (int n = 0; n < drob.length; n++) {
-            System.out.print(drob[n]+", " );
+            if (n == drob.length - 1) {
+                System.out.print(drob[n]);
+            } else {
+                System.out.print(drob[n] + ", ");
+            }
         }
         System.out.println();
         System.out.println("№3");
         for (int i =0; i < morcovka.length; i++) {
-            System.out.print(morcovka[i] + ", ");
+            if (i == morcovka.length - 1) {
+                System.out.print(morcovka[i]);
+            } else {
+                System.out.print(morcovka[i] + ", ");
+            }
         }
-        System.out.println();
+            System.out.println();
         System.out.println("Задача № 3");
  /*
             Задача 3
@@ -70,21 +86,31 @@ new
              */
         // №1
         for (int i  = massiv.length-1; i >= 0; i--) {
-            System.out.print(massiv[i] + ", ");
+            if (i == 0) {
+                System.out.print(massiv[i]);
+            } else {
+                System.out.print(massiv[i] + ", ");
+            }
         }
         System.out.println();
         //№2
         for (int i = drob.length-1; i >= 0; i--) {
-            System.out.print(drob[i] + ", ");
+            if (i == 0) {
+                System.out.print(drob[i]);
+            } else {
+                System.out.print(drob[i] + ", ");
+            }
         }
         System.out.println();
         //3
         for (int i = morcovka.length-1; i >= 0; i--) {
-            System.out.print(morcovka[i]+", ");
-
+            if (i == 0) {
+                System.out.print(morcovka[i]);
+            } else {
+                System.out.print(morcovka[i] + ", ");
+            }
         }
        /*
-
 Задача 4
 Пройдитесь по первому целочисленному массиву и все нечетные числа в нем сделайте четными (нужно прибавить 1).
 Важно: код должен работать с любым целочисленным массивом, поэтому для решения задания используйте циклы.
@@ -98,11 +124,22 @@ new
             if ( massiv[i] % 2 != 0) {
                 massiv[i] = massiv[i]+1;
             }
-            System.out.print(massiv[i] + ", ");
+            if (i == massiv.length - 1) {
+                System.out.print(massiv[i]);
+            } else {
+                System.out.print(massiv[i] + ", ");
+            }
+        }
+       /*
+        for (int i = 0; i < massiv.length; i++) {
+            if(massiv[i]%2 != 0){
+                massiv[i] = massiv[i]+1;
+            }
 
+            System.out.println(Array.toString(massiv));
         }
 
-
+        */
     }
     }
 
